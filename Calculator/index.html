@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 id="heading">Calculator</h1>
+<div class="container">
+    
+    <div class="search">
+        <input type="text" id="display" >
+    </div>
+    <div class="buttons">
+        <button type="button" class="operator" onclick="update('+')">+</button>
+        <button type="button" onclick="update(7)">7</button>
+        <button type="button" onclick="update(8)">8</button>
+        <button type="button" onclick="update(9)">9</button>
+        <button type="button" class="operator" onclick="update('-')">−</button>
+        <button type="button" onclick="update(4)">4</button>
+        <button type="button" onclick="update(5)">5</button>
+        <button type="button" onclick="update(6)">6</button>
+        <button type="button" class="operator" onclick="update('*')">×</button>
+        <button type="button" onclick="update(1)">1</button>
+        <button type="button" onclick="update(2)">2</button>
+        <button type="button" onclick="update(3)">3</button>
+        <button type="button" class="operator" onclick="update('/')">÷</button>
+
+        <button type="button" onclick="update(0)">0</button>
+        <button type="button" class="decimal" onclick="update('.')">.</button>
+        
+        <button type="button" class="all-clear" onclick="clearD()">AC</button>
+        <button type="button" class="equal-sign"  onclick="calculate()">=</button>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

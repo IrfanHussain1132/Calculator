@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    border: 2px solid black;
+    background-color: rgb(31, 31, 31);
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    animation: border-animation 5s infinite;
+    
+}
+
+@keyframes border-animation {
+    0% {
+        border-color: rgb(0, 187, 255);
+        box-shadow: 2px 5px 25px 3px rgb(0, 187, 255);
+        
+    }
+    33% {
+        border-color: rgb(255, 119, 0);
+        box-shadow: 2px 5px 25px 3px rgb(255, 119, 0);
+        
+    }
+    66% {
+        border-color: rgb(0, 170, 255);
+        box-shadow: 2px 5px 25px 3px rgb(0, 170, 255);
+        
+    }
+    100% {
+        border-color: rgb(0, 255, 38);
+        box-shadow: 2px 5px 25px 3px rgb(0, 255, 38);
+        
+    }
+}
+
+.search {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#display {
+    width: 92%;
+    height: 55px;
+    padding: 15px;
+    font-size: 2.7rem;
+    text-align: right;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #9c9c9c;
+    color: black;
+}
+
+.operator {
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.75rem;
+}
+
+.equal-sign {
+    background-color: #27ae60;
+    color: white;
+    grid-column: span 2;
+}
+
+.all-clear {
+    background-color: #e74c3c;
+    color: white;
+    grid-column: span 2;
+}
+/* .img{
+    
+    
+} */
+#heading{
+    color: #ccc;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    font-size: 3.5rem;
+    font-family: monospace;
+    letter-spacing: 7px;
+}
